@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Academic Portfolio</title>
+    <title>Dr. Eleanor Vance | Computational Neuroscience</title>
     <!-- Load Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Configure Tailwind to use 'Inter' and enable dark mode -->
@@ -56,23 +56,37 @@
 
         <!-- Header / Intro Section -->
         <section id="home" class="mb-12 md:mb-16">
-            <h1 class="text-5xl sm:text-6xl font-extrabold mb-4 leading-tight">
-                [Nandita Kumari]
-            </h1>
-            <p class="text-xl text-gray-600 dark:text-gray-300 mb-6">
-                Postdoctoral Research Fellow at Brown University.
-            </p>
             
+            <div class="flex flex-col md:flex-row items-start md:items-center gap-6 mb-8">
+                <!-- Profile Image -->
+                <!-- IMPORTANT: REPLACE "YOUR_PROFILE_PHOTO_URL" with the direct link to your photo (e.g., from your GitHub repo) -->
+                <img src="YOUR_PROFILE_PHOTO_URL" 
+                     onerror="this.onerror=null;this.src='https://placehold.co/128x128/1e293b/ffffff?text=EV'" 
+                     alt="Dr. Eleanor Vance Profile Photo" 
+                     class="w-32 h-32 rounded-full object-cover border-4 border-accent shadow-xl flex-shrink-0">
+
+                <!-- Text Block -->
+                <div>
+                    <h1 class="text-5xl sm:text-6xl font-extrabold leading-tight">
+                        Dr. Eleanor Vance
+                    </h1>
+                    <p class="text-xl text-gray-600 dark:text-gray-300 mt-2">
+                        Postdoctoral Researcher in Computational Neuroscience at Stanford University.
+                    </p>
+                </div>
+            </div>
+
             <!-- Simple, prominent link bar (Navigation) -->
             <nav class="flex flex-wrap gap-x-6 gap-y-2 text-lg font-medium">
                 <a href="#about" class="text-accent hover:text-accent-hover transition duration-300 border-b-2 border-transparent hover:border-accent">About</a>
                 <a href="#research" class="text-accent hover:text-accent-hover transition duration-300 border-b-2 border-transparent hover:border-accent">Research</a>
                 <a href="#publications" class="text-accent hover:text-accent-hover transition duration-300 border-b-2 border-transparent hover:border-accent">Publications</a>
-                <a href="YOUR_CV_FILE_LINK" target="_blank" class="text-accent hover:text-accent-hover transition duration-300 border-b-2 border-transparent hover:border-accent">CV</a>
+                <!-- IMPORTANT: REPLACE "YOUR_CV_FILE_LINK" with the direct link to your CV PDF -->
+                <a href="YOUR_CV_FILE_LINK" target="_blank" class="text-accent hover:text-accent-hover transition duration-300 border-b-2 border-transparent hover:border-accent">CV (PDF)</a>
                 <a href="#contact" class="text-accent hover:text-accent-hover transition duration-300 border-b-2 border-transparent hover:border-accent">Contact</a>
             </nav>
 
-            <!-- Dark Mode Toggle moved to be part of the main content area -->
+            <!-- Dark Mode Toggle -->
             <div class="mt-8">
                 <button id="theme-toggle" type="button" class="flex items-center text-gray-500 dark:text-gray-400 hover:text-accent dark:hover:text-accent transition duration-300" aria-label="Toggle Dark Mode">
                     <!-- Moon Icon (for Light Mode) -->
@@ -90,12 +104,13 @@
 
             <div class="text-lg space-y-6 leading-relaxed">
                 <p>
-                    Hi I am a planetary scientist passionate about unraveling the history of the solar system through spectroscopy, remote sensing, and data-driven analysis.
+                    I am a Postdoctoral Researcher in the Department of Bioengineering at Stanford University, advised by Dr. Anya Sharma. My work focuses on **Spiking Neural Networks (SNNs)** and their application in highly efficient, low-power Brain-Computer Interfaces (BCIs). I specifically design novel, biologically plausible algorithms for real-time data processing.
                 </p>
                 <p>
-                    I combine expertise in spectroscopy (visible, near-infrared, and thermal infrared), imaging, and machine learning models with hands-on experience in laboratory measurements, field geology and orbital observations. Currently, I am working on understanding the solar system through the lens of meteorites. 
+                    My PhD from MIT centered on computational models of sensory processing, where I developed state-of-the-art predictive coding frameworks. I am a strong advocate for open science and actively contribute to the Nengo ecosystem.
+                </p>
                 <p class="text-sm italic text-gray-500 dark:text-gray-400">
-                    <a href="mailto:nandita_kumari@brown.edu" class="hover:text-accent">nandita_kumari@brown.edu</a> &bull; <a href="https://www.linkedin.com/in/nandita-kumari-77b219103/" target="_blank" class="hover:text-accent">LinkedIn</a> &bull; <a href="https://github.com/Maficmoon" target="_blank" class="hover:text-accent">GitHub</a>
+                    <a href="mailto:eleanor.vance@stanford.edu" class="hover:text-accent">eleanor.vance@stanford.edu</a> &bull; <a href="YOUR_LINKEDIN_URL" target="_blank" class="hover:text-accent">LinkedIn</a> &bull; <a href="YOUR_GITHUB_URL" target="_blank" class="hover:text-accent">GitHub</a> &bull; <a href="YOUR_GOOGLE_SCHOLAR_LINK" target="_blank" class="hover:text-accent">Google Scholar</a>
                 </p>
             </div>
         </section>
@@ -105,29 +120,42 @@
             <h2 class="text-3xl font-bold mb-6 text-accent">Research</h2>
 
             <div class="space-y-8">
-                <!-- Research Area 1 -->
+                <!-- Research Area 1: Spiking Neural Networks -->
                 <div>
-                    <h3 class="text-xl font-semibold mb-1">Silicic Volcanism on the Moon</h3>
+                    <h3 class="text-xl font-semibold mb-1">Low-Power Spiking Neural Networks for BCIs</h3>
                     <p class="text-gray-700 dark:text-gray-300">
-                        This project is focused on understanding the silicic volcanism on the Moon in the absence of tectonic plates.(Keywords: Gruithuisen Domes, Silicic Volcanism, Moon)
+                        Focusing on algorithm-hardware co-design to achieve state-of-the-art energy efficiency. My current projects involve training SNNs with surrogate gradients and optimizing them for neuromorphic hardware platforms.
+                    </p>
+                    
+                    <!-- Placeholder Project Image -->
+                    <!-- IMPORTANT: REPLACE "YOUR_PROJECT_IMAGE_URL" with the direct link to a diagram or figure -->
+                    <div class="mt-4 mb-2 overflow-hidden rounded-lg shadow-lg border border-gray-200 dark:border-gray-700">
+                        <img src="YOUR_PROJECT_IMAGE_URL" 
+                             onerror="this.onerror=null;this.src='https://placehold.co/800x450/1e293b/ffffff?text=SNN+Architecture+Diagram'" 
+                             alt="Spiking Neural Network Architecture Diagram" 
+                             class="w-full h-auto object-cover">
+                    </div>
+                    <p class="text-xs italic text-gray-500 dark:text-gray-400">
+                        Figure 1: Comparison of spiking rate distributions across three different surrogate gradient training methods.
+                    </p>
+                    
+                    <a href="#publications" class="text-sm text-accent hover:underline mt-3 inline-block">See related publications</a>
+                </div>
+
+                <!-- Research Area 2: Predictive Coding -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-1">Hierarchical Predictive Coding Models</h3>
+                    <p class="text-gray-700 dark:text-gray-300">
+                        Developing deep learning models inspired by predictive coding principles to understand how the brain processes and anticipates complex sensory inputs. This work is primarily focused on auditory and visual data streams.
                     </p>
                     <a href="#publications" class="text-sm text-accent hover:underline mt-1 inline-block">See related publications</a>
                 </div>
 
-                <!-- Research Area 2 -->
+                <!-- Research Area 3: Robotics -->
                 <div>
-                    <h3 class="text-xl font-semibold mb-1">Causal Inference Models in Complex Systems</h3>
+                    <h3 class="text-xl font-semibold mb-1">Embodied Intelligence and Reinforcement Learning</h3>
                     <p class="text-gray-700 dark:text-gray-300">
-                        Researching novel graphical models and structural equation modeling to determine true causal relationships in complex biological and social data systems. (Keywords: Structure Learning, Counterfactuals, Bayesian Networks)
-                    </p>
-                    <a href="#publications" class="text-sm text-accent hover:underline mt-1 inline-block">See related publications</a>
-                </div>
-
-                <!-- Research Area 3 -->
-                <div>
-                    <h3 class="text-xl font-semibold mb-1">Quantum Machine Learning and Optimization</h3>
-                    <p class="text-gray-700 dark:text-gray-300">
-                        Exploring Variational Quantum Eigensolvers (VQE) and Quantum Neural Networks for exponential speedups in classification and optimization problems. (Keywords: VQE, QNN, Quantum Circuit Design)
+                        Exploring how bio-inspired learning mechanisms can enhance the robustness and sample efficiency of reinforcement learning agents in unstructured robotic environments.
                     </p>
                     <a href="#publications" class="text-sm text-accent hover:underline mt-1 inline-block">See related publications</a>
                 </div>
@@ -143,10 +171,10 @@
                 <!-- Publication 1 -->
                 <div class="publication-list-item">
                     <p class="text-lg font-medium text-gray-900 dark:text-gray-50 mb-1">
-                        Title of Paper One: A Novel Approach to Distributed Optimization
+                        Surrogate Gradients with Adaptive Firing Thresholds for Deep SNNs
                     </p>
                     <p class="text-md text-gray-700 dark:text-gray-300 mb-2">
-                        Your Name, J. Smith, A. Lee. <span class="italic">IEEE Transactions on AI</span>, 2024.
+                        Vance, E., & Sharma, A. <span class="italic">Nature Computational Science</span>, 2024.
                     </p>
                     <div class="flex flex-wrap gap-x-4 text-sm">
                         <a href="#" target="_blank" class="text-accent hover:underline">
@@ -155,7 +183,7 @@
                         <a href="#" target="_blank" class="text-accent hover:underline">
                             [DOI Link]
                         </a>
-                        <a href="#" target="_blank" class="text-accent hover:underline">
+                        <a href="YOUR_CODE_LINK" target="_blank" class="text-accent hover:underline">
                             [Code]
                         </a>
                     </div>
@@ -164,17 +192,17 @@
                 <!-- Publication 2 -->
                 <div class="publication-list-item">
                     <p class="text-lg font-medium text-gray-900 dark:text-gray-50 mb-1">
-                        Security Challenges in Federated Machine Learning Systems
+                        The Role of Top-Down Modulation in Robust Sensory Prediction
                     </p>
                     <p class="text-md text-gray-700 dark:text-gray-300 mb-2">
-                        A. Brown, Your Name. <span class="italic">NeurIPS Workshop on Privacy</span>, 2023.
+                        Vance, E., Chen, J., & Miller, R. <span class="italic">Proceedings of NeurIPS</span>, 2023.
                     </p>
                     <div class="flex flex-wrap gap-x-4 text-sm">
                         <a href="#" target="_blank" class="text-accent hover:underline">
                             [PDF]
                         </a>
                         <a href="#" target="_blank" class="text-accent hover:underline">
-                            [DOI Link]
+                            [Slides]
                         </a>
                     </div>
                 </div>
@@ -182,10 +210,10 @@
                 <!-- Publication 3 -->
                 <div class="publication-list-item">
                     <p class="text-lg font-medium text-gray-900 dark:text-gray-50 mb-1">
-                        A Survey on Explainable AI for Clinical Diagnostics
+                        A Systematic Review of Neuromorphic Hardware for Edge AI
                     </p>
                     <p class="text-md text-gray-700 dark:text-gray-300 mb-2">
-                        S. Chen, Your Name, T. Green. <span class="italic">Nature Digital Medicine (Review)</span>, 2022.
+                        Green, T., & Vance, E. <span class="italic">IEEE Micro</span>, 2022.
                     </p>
                     <div class="flex flex-wrap gap-x-4 text-sm">
                         <a href="#" target="_blank" class="text-accent hover:underline">
@@ -204,33 +232,17 @@
             </div>
         </section>
 
-        <!-- CV Section (Now just a large button since the navigation handles the link) -->
-        <section id="cv" class="hidden"></section>
-
         <!-- Contact Section -->
         <section id="contact" class="py-12 border-t border-gray-200 dark:border-secondary-dark">
             <h2 class="text-3xl font-bold mb-6 text-accent">Contact</h2>
 
-            <div class="max-w-xl text-lg space-y-6">
-                <p>
-                    I welcome inquiries regarding research collaboration, speaking engagements, and mentorship opportunities. Please feel free to reach out via email or use the form below.
+            <div class="max-w-xl text-lg space-y-4">
+                <p class="text-gray-700 dark:text-gray-300">
+                    The best way to contact me is via email. I welcome inquiries regarding collaboration, opportunities, and discussions on computational neuroscience.
                 </p>
-
-                <!-- Simple Contact Form (Action needs update for real deployment) -->
-                <form action="YOUR_FORM_SUBMISSION_ENDPOINT" method="POST" class="space-y-4 pt-4">
-                    <div>
-                        <input type="text" id="name" name="name" placeholder="Your Name" required class="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-secondary-dark focus:ring-accent focus:border-accent transition duration-300">
-                    </div>
-                    <div>
-                        <input type="email" id="email" name="email" placeholder="Your Email" required class="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-secondary-dark focus:ring-accent focus:border-accent transition duration-300">
-                    </div>
-                    <div>
-                        <textarea id="message" name="message" rows="4" placeholder="Your Message" required class="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-secondary-dark focus:ring-accent focus:border-accent transition duration-300"></textarea>
-                    </div>
-                    <button type="submit" class="w-full px-4 py-3 text-lg font-semibold text-white bg-accent rounded-lg hover:bg-accent-hover transition duration-300 ease-in-out shadow-md">
-                        Send Message
-                    </button>
-                </form>
+                <p class="text-xl font-semibold">
+                    Email: <a href="mailto:eleanor.vance@stanford.edu" class="text-accent hover:text-accent-hover transition duration-300">eleanor.vance@stanford.edu</a>
+                </p>
             </div>
         </section>
     </main>
@@ -238,7 +250,7 @@
     <!-- Footer -->
     <footer class="mt-20 py-8 border-t border-gray-200 dark:border-secondary-dark">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-gray-500 dark:text-gray-400">
-            <p>&copy; <span id="current-year"></span> Your Name. Built with GitHub Pages and Tailwind CSS.</p>
+            <p>&copy; <span id="current-year"></span> Eleanor Vance. Built with GitHub Pages and Tailwind CSS.</p>
             <div class="mt-2 space-x-4">
                 <a href="YOUR_LINKEDIN_URL" target="_blank" class="hover:text-accent transition-colors duration-300">LinkedIn</a>
                 <span class="text-gray-300 dark:text-gray-700">|</span>
