@@ -57,32 +57,24 @@
         <!-- Header / Intro Section -->
         <section id="home" class="mb-12 md:mb-16">
             
-            <div class="flex flex-col md:flex-row items-start md:items-center gap-6 mb-8">
-                <!-- Profile Image -->
-                <!-- NOTE: Please update the 'src' attribute with your actual profile photo URL! -->
-                <img src="https://placehold.co/128x128/1e293b/ffffff?text=NK" 
-                    onerror="this.onerror=null;this.src='https://placehold.co/128x128/1e293b/ffffff?text=NK'" 
-                    alt="Dr. Nandita Kumari Profile Photo" 
-                    class="w-32 h-32 rounded-full object-cover border-4 border-accent shadow-xl flex-shrink-0">
-
-                <!-- Text Block -->
-                <div>
-                    <h1 class="text-5xl sm:text-6xl font-extrabold leading-tight">
-                        Dr. Nandita Kumari
-                    </h1>
-                    <p class="text-xl text-gray-600 dark:text-gray-300 mt-2">
-                        Postdoctoral Researcher in Department of Earth, Environmental and Planetary Sciences at Brown University.
-                    </p>
-                </div>
+            <!-- Removed the image from here to place it in the About section -->
+            <div class="mb-8">
+                <h1 class="text-5xl sm:text-6xl font-extrabold leading-tight">
+                    Dr. Nandita Kumari
+                </h1>
+                <p class="text-xl text-gray-600 dark:text-gray-300 mt-2">
+                    Postdoctoral Researcher in Department of Earth, Environmental and Planetary Sciences at Brown University.
+                </p>
             </div>
 
             <!-- Simple, prominent link bar (Navigation) -->
             <nav class="flex flex-wrap gap-x-6 gap-y-2 text-lg font-medium">
                 <a href="#about" class="text-accent hover:text-accent-hover transition duration-300 border-b-2 border-transparent hover:border-accent">About</a>
                 <a href="#research" class="text-accent hover:text-accent-hover transition duration-300 border-b-2 border-transparent hover:border-accent">Research</a>
+                <a href="#abstracts" class="text-accent hover:text-accent-hover transition duration-300 border-b-2 border-transparent hover:border-accent">Abstracts</a>
                 <a href="#publications" class="text-accent hover:text-accent-hover transition duration-300 border-b-2 border-transparent hover:border-accent">Publications</a>
                 <!-- NOTE: Please update the 'href' with the direct link to your CV PDF -->
-                <a href="#cv-file-link" target="_blank" class="text-accent hover:text-accent-hover transition duration-300 border-b-2 border-transparent hover:border-accent">CV (PDF)</a>
+                <a href="YOUR_CV_FILE_LINK" target="_blank" class="text-accent hover:text-accent-hover transition duration-300 border-b-2 border-transparent hover:border-accent">CV (PDF)</a>
                 <a href="#contact" class="text-accent hover:text-accent-hover transition duration-300 border-b-2 border-transparent hover:border-accent">Contact</a>
             </nav>
 
@@ -98,20 +90,46 @@
             </div>
         </section>
 
-        <!-- About Section -->
+        <!-- About Section (Restructured with Photo on Left, Text on Right) -->
         <section id="about" class="py-12 border-t border-gray-200 dark:border-secondary-dark">
-            <h2 class="text-3xl font-bold mb-6 text-accent">About</h2>
+            
+            <!-- Two-Column Layout for About -->
+            <!-- Using items-stretch to make both columns equal height for visual balance -->
+            <div class="flex flex-col md:flex-row gap-8 items-stretch">
+                
+                <!-- Left Column (Photo & Contact Info) - ~1/3 width on desktop -->
+                <div class="md:w-1/3 flex flex-col items-center md:items-start text-center md:text-left h-full">
+                    <h2 class="text-3xl font-bold mb-4 md:hidden text-accent">About</h2> <!-- Show title on mobile -->
+                    
+                    <!-- Profile Image (No border, subtle shadow) -->
+                    <!-- NOTE: Please update the 'src' attribute with your actual profile photo URL! -->
+                    <img src="YOUR_PROFILE_PHOTO_URL" 
+                        onerror="this.onerror=null;this.src='https://placehold.co/200x200/1e293b/ffffff?text=NK'" 
+                        alt="Dr. Nandita Kumari Profile Photo" 
+                        class="w-48 h-48 rounded-xl object-cover shadow-lg flex-shrink-0 mb-6">
 
-            <div class="text-lg space-y-6 leading-relaxed">
-                <p>
-                    I am a planetary scientist passionate about unraveling the history of the solar system through spectroscopy, remote sensing, and data-driven analysis. My research focuses on linking laboratory, field, and orbital observations to better understand planetary differentiation, magmatic processes, and early solar system evolution.
-                </p>
-                <p>
-                    I combine expertise in spectroscopy (visible, near-infrared, and thermal infrared), imaging, and machine learning methods with hands-on experience in laboratory measurements and field geology to understand the evolution of planetary bodeis and early solar system. Beyond research, I am deeply committed to teaching, mentorship, and advancing planetary exploration through collaborative work.
-                </p>
-                <p class="text-sm italic text-gray-500 dark:text-gray-400">
-                    <a href="mailto:nandita_kumari@brown.edu" class="hover:text-accent">nandita_kumari@brown.edu</a> &bull; <a href="https://www.linkedin.com/in/nandita-kumari-77b219103/" target="_blank" class="hover:text-accent">LinkedIn</a> &bull; <a href="https://github.com/Maficmoon/" target="_blank" class="hover:text-accent">GitHub</a> &bull; <a href="https://scholar.google.com/citations?user=7N-fwYcAAAAJ&hl=en&oi=ao" target="_blank" class="hover:text-accent">Google Scholar</a>
-                </p>
+                    <!-- Contact/Quick Links (from original About section) -->
+                    <p class="text-sm italic text-gray-500 dark:text-gray-400 space-y-1">
+                        <a href="mailto:nandita_kumari@brown.edu" class="hover:text-accent block">Email: nandita_kumari@brown.edu</a>
+                        <a href="https://www.linkedin.com/in/nandita-kumari-77b219103/" target="_blank" class="hover:text-accent block">LinkedIn Profile</a>
+                        <a href="https://github.com/Maficmoon/" target="_blank" class="hover:text-accent block">GitHub</a>
+                        <a href="https://scholar.google.com/citations?user=7N-fwYcAAAAJ&hl=en&oi=ao" target="_blank" class="hover:text-accent block">Google Scholar</a>
+                    </p>
+                </div>
+
+                <!-- Right Column (About Text) - ~2/3 width on desktop -->
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-bold mb-6 hidden md:block text-accent">About</h2> <!-- Hide title on mobile as it's above image -->
+                    <!-- text-justify class for justified text alignment -->
+                    <div class="text-lg space-y-6 leading-relaxed text-justify">
+                        <p>
+                            I am a planetary scientist passionate about unraveling the history of the solar system through spectroscopy, remote sensing, and data-driven analysis. My research focuses on linking laboratory, field, and orbital observations to better understand planetary differentiation, magmatic processes, and early solar system evolution.
+                        </p>
+                        <p>
+                            I combine expertise in spectroscopy (visible, near-infrared, and thermal infrared), imaging, and machine learning methods with hands-on experience in laboratory measurements and field geology to understand the evolution of planetary bodeis and early solar system. Beyond research, I am deeply committed to teaching, mentorship, and advancing planetary exploration through collaborative work.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -198,6 +216,54 @@
                     
                     <a href="#publications" class="text-sm text-accent hover:underline mt-3 inline-block">See related publications</a>
                 </div>
+            </div>
+        </section>
+
+        <!-- Abstracts Section (NEW) -->
+        <section id="abstracts" class="py-12 border-t border-gray-200 dark:border-secondary-dark">
+            <h2 class="text-3xl font-bold mb-6 text-accent">Conference Abstracts & Presentations</h2>
+        
+            <div class="space-y-2">
+                
+                <!-- Abstract 1: Lunar South Pole -->
+                <div class="publication-list-item">
+                    <p class="text-lg font-medium text-gray-900 dark:text-gray-50 mb-1">
+                        Geomorphological Mapping of Permanently Shadowed Regions (PSRs) at the Lunar South Pole
+                    </p>
+                    <p class="text-md text-gray-700 dark:text-gray-300 mb-2">
+                        Kumari, N., & Head, J. W. <span class="italic">55th Lunar and Planetary Science Conference (LPSC)</span>, Abstract #2031, 2024.
+                    </p>
+                    <div class="flex flex-wrap gap-x-4 text-sm">
+                        <a href="#" target="_blank" class="text-accent hover:underline">
+                            [Presentation Link]
+                        </a>
+                        <a href="#" target="_blank" class="text-accent hover:underline">
+                            [Abstract PDF]
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Abstract 2: Martian Silicics -->
+                <div class="publication-list-item">
+                    <p class="text-lg font-medium text-gray-900 dark:text-gray-50 mb-1">
+                        Thermal Emission Spectrometry of the Nili Patera Caldera: Evidence for Extensive Silicic Volcanism on Mars
+                    </p>
+                    <p class="text-md text-gray-700 dark:text-gray-300 mb-2">
+                        Kumari, N., & Smith, A. <span class="italic">Astrobiology Science Conference (AbSciCon)</span>, Abstract #345-02, 2023.
+                    </p>
+                    <div class="flex flex-wrap gap-x-4 text-sm">
+                        <a href="#" target="_blank" class="text-accent hover:underline">
+                            [Poster PDF]
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="pt-4">
+                    <a href="https://scholar.google.com/citations?user=7N-fwYcAAAAJ&hl=en&oi=ao" target="_blank" class="text-accent font-semibold hover:underline">
+                        → See more presentations and abstracts
+                    </a>
+                </div>
+
             </div>
         </section>
         
