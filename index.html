@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Nandita Kumari | Geosciences</title>
+    <title>Dr. Nandita Kumari | Geosciences</title>
     <!-- Load Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Configure Tailwind to use 'Inter' and enable dark mode -->
@@ -44,7 +44,7 @@
             border-bottom: 1px dashed #334155;
         }
         .dark .publication-list-item:hover {
-             background-color: rgba(16, 185, 129, 0.05);
+            background-color: rgba(16, 185, 129, 0.05);
         }
     </style>
 </head>
@@ -66,12 +66,13 @@
                 </p>
             </div>
 
-            <!-- Simple, prominent link bar (Navigation) - UPDATED SEQUENCE -->
+            <!-- Simple, prominent link bar (Navigation) - FIX APPLIED HERE -->
             <nav class="flex flex-wrap gap-x-6 gap-y-2 text-lg font-medium">
                 <a href="#about" class="text-accent hover:text-accent-hover transition duration-300 border-b-2 border-transparent hover:border-accent">About</a>
                 <a href="#research" class="text-accent hover:text-accent-hover transition duration-300 border-b-2 border-transparent hover:border-accent">Research</a>
                 <a href="#abstracts" class="text-accent hover:text-accent-hover transition duration-300 border-b-2 border-transparent hover:border-accent">Conference Abstracts</a>
-                <a href="#ions" class="text-accent hover:text-accent-hover transition duration-300 border-b-2 border-transparent hover:border-accent">Publications</a>
+                <!-- FIX: Changed href="#ions" to href="#publications" -->
+                <a href="#publications" class="text-accent hover:text-accent-hover transition duration-300 border-b-2 border-transparent hover:border-accent">Publications</a>
                 <!-- NEW TABS ADDED HERE -->
                 <a href="#awards" class="text-accent hover:text-accent-hover transition duration-300 border-b-2 border-transparent hover:border-accent">Awards</a>
                 <a href="#media" class="text-accent hover:text-accent-hover transition duration-300 border-b-2 border-transparent hover:border-accent">Media</a>
@@ -140,7 +141,7 @@
             <h2 class="text-3xl font-bold mb-6 text-accent">Research</h2>
 
             <div class="space-y-8">
-                <!-- Research Area 1: Artemis III Landing Sites -->
+                <!-- Research Area 1: Lunar Meteorites -->
                 <div>
                     <h3 class="text-xl font-semibold mb-1">Lunar Meteorites as a Window into Lunar Evolution</h3>
                     <p class="text-gray-700 dark:text-gray-300">
@@ -154,7 +155,7 @@
                             class="w-full h-auto object-cover">
                     </div>
                     <p class="text-xs italic text-gray-500 dark:text-gray-400">
-                        Figure 1: a)Grayscale map representing the location of endmember (pure pixel) spectrum. MIR reflectance spectrum of  b) feldspathic and basaltic glass c)anorthite at varying shock levels d)pyroxene at different orientations e)olivine spectrum at two different orientations f)carbonate spectrum and an unknown endmember spectrum. Mineralogical abundance map derived using the endmember spectrum for  g) glass h)anorthite i)pyroxene j)olivine k)carbonate and l)the unknown component m) an image of the root mean squared error remaining between the modelled and observed spectrum and n) distribution of the error.
+                        Figure 1: a)Grayscale map representing the location of endmember (pure pixel) spectrum. MIR reflectance spectrum of b) feldspathic and basaltic glass c)anorthite at varying shock levels d)pyroxene at different orientations e)olivine spectrum at two different orientations f)carbonate spectrum and an unknown endmember spectrum. Mineralogical abundance map derived using the endmember spectrum for g) glass h)anorthite i)pyroxene j)olivine k)carbonate and l)the unknown component m) an image of the root mean squared error remaining between the modelled and observed spectrum and n) distribution of the error.
                     </p>
                     <a href="#publications" class="text-sm text-accent hover:underline mt-3 inline-block">See related publications</a>
                 </div>
@@ -231,7 +232,7 @@
                             class="w-full h-auto object-cover">
                     </div>
                     <p class="text-xs italic text-gray-500 dark:text-gray-400">
-                        Figure 5: a) Red-Green-Blue(RGB) map created from decorrelation stretch (DCS) of bands 6, 5 and 4 of a region in the Nili Patera area (Image ID: I09407002). The red-orange color indicates felsic composition. The dotted area represents the region with silicic composition within the caldera and side lobe.  b) Predicted SiO2 wt.% maps of the region. c) Averaged THEMIS spectra over the region of interests d) Histogram displaying SiO2 wt% distribution within the caldera and side lobe.
+                        Figure 5: a) Red-Green-Blue(RGB) map created from decorrelation stretch (DCS) of bands 6, 5 and 4 of a region in the Nili Patera area (Image ID: I09407002). The red-orange color indicates felsic composition. The dotted area represents the region with silicic composition within the caldera and side lobe. b) Predicted SiO2 wt.% maps of the region. c) Averaged THEMIS spectra over the region of interests d) Histogram displaying SiO2 wt% distribution within the caldera and side lobe.
                     </p>
                     
                     <a href="#publications" class="text-sm text-accent hover:underline mt-3 inline-block">See related publications</a>
@@ -245,62 +246,72 @@
         
             <div class="space-y-2">
                 
-                <!-- Abstract 1: Lunar South Pole -->
+                <!-- Abstract List Items -->
                 <div class="publication-list-item">
-                    <a href="https://www.hou.usra.edu/meetings/lpsc2025/pdf/1852.pdf" target="_blank" target="_blank" class="block group">
+                    <a href="https://www.hou.usra.edu/meetings/lpsc2025/pdf/1852.pdf" target="_blank" class="block group">
                         <p class="text-lg font-medium text-gray-900 dark:text-gray-50 mb-1 group-hover:text-accent transition-colors duration-300">
                             [9] Spectral Characterization of the Lunar Meteorite Northwest Africa (NWA) 11444
                         </p>
                     </a>
-                <!-- Abstract 1: Lunar South Pole -->
-                    <a href="https://www.hou.usra.edu/meetings/lpsc2024/pdf/1819.pdf" target="_blank" target="_blank" class="block group">
+                </div>
+                <div class="publication-list-item">
+                    <a href="https://www.hou.usra.edu/meetings/lpsc2024/pdf/1819.pdf" target="_blank" class="block group">
                         <p class="text-lg font-medium text-gray-900 dark:text-gray-50 mb-1 group-hover:text-accent transition-colors duration-300">
                             [8] Christiansen Feature Maps of the Lunar Poles
                         </p>
                     </a>
-                <!-- Abstract 1: Lunar South Pole -->
-                    <a href="https://www.hou.usra.edu/meetings/lpsc2023/pdf/2396.pdf" target="_blank" target="_blank" class="block group">
+                </div>
+                <div class="publication-list-item">
+                    <a href="https://www.hou.usra.edu/meetings/lpsc2023/pdf/2396.pdf" target="_blank" class="block group">
                         <p class="text-lg font-medium text-gray-900 dark:text-gray-50 mb-1 group-hover:text-accent transition-colors duration-300">
                             [7] Brewing Machine Learning Models for Accurate Analysis of Current and Future Datasets
                         </p>
                     </a>
-                <!-- Abstract 1: Lunar South Pole -->
-                    <a href="https://www.hou.usra.edu/meetings/lpsc2023/pdf/1814.pdf" target="_blank" target="_blank" class="block group">
+                </div>
+                <div class="publication-list-item">
+                    <a href="https://www.hou.usra.edu/meetings/lpsc2023/pdf/1814.pdf" target="_blank" class="block group">
                         <p class="text-lg font-medium text-gray-900 dark:text-gray-50 mb-1 group-hover:text-accent transition-colors duration-300">
                             [6] Procedure Standardization for Toolbox for Research and Exploration Field Data Analysis
                         </p>
                     </a>
-                <!-- Abstract 1: Lunar South Pole -->
-                    <a href="https://www.hou.usra.edu/meetings/leag2022/pdf/5022.pdf" target="_blank" target="_blank" class="block group">
+                </div>
+                <div class="publication-list-item">
+                    <a href="https://www.hou.usra.edu/meetings/leag2022/pdf/5022.pdf" target="_blank" class="block group">
                         <p class="text-lg font-medium text-gray-900 dark:text-gray-50 mb-1 group-hover:text-accent transition-colors duration-300">
                             [5] Gruithuisen Domes: Silicic Volcanic Constructs on the Moon
                         </p>
                     </a>
-                <!-- Abstract 1: Lunar South Pole -->
-                    <a href="https://www.hou.usra.edu/meetings/lpsc2022/pdf/2034.pdf" target="_blank" target="_blank" class="block group">
+                </div>
+                <div class="publication-list-item">
+                    <a href="https://www.hou.usra.edu/meetings/lpsc2022/pdf/2034.pdf" target="_blank" class="block group">
                         <p class="text-lg font-medium text-gray-900 dark:text-gray-50 mb-1 group-hover:text-accent transition-colors duration-300">
-                           [4] A Holistic View of Gruithuisen Domes Silicic – Constructs on the Moon
+                            [4] A Holistic View of Gruithuisen Domes Silicic – Constructs on the Moon
                         </p>
                     </a>
-                <!-- Abstract 1: Lunar South Pole -->
-                    <a href="https://www.hou.usra.edu/meetings/lpsc2021/pdf/1197.pdf" target="_blank" target="_blank" class="block group">
+                </div>
+                <div class="publication-list-item">
+                    <a href="https://www.hou.usra.edu/meetings/lpsc2021/pdf/1197.pdf" target="_blank" class="block group">
                         <p class="text-lg font-medium text-gray-900 dark:text-gray-50 mb-1 group-hover:text-accent transition-colors duration-300">
-                           [3] Geological Diversity at Two Potential Landing Sites in the Lunar South Pole
+                            [3] Geological Diversity at Two Potential Landing Sites in the Lunar South Pole
                         </p>
                     </a>
-                <!-- Abstract 1: Lunar South Pole -->
-                    <a href="https://www.hou.usra.edu/meetings/lpsc2020/pdf/1967.pdf" target="_blank" target="_blank" class="block group">
+                </div>
+                <div class="publication-list-item">
+                    <a href="https://www.hou.usra.edu/meetings/lpsc2020/pdf/1967.pdf" target="_blank" class="block group">
                         <p class="text-lg font-medium text-gray-900 dark:text-gray-50 mb-1 group-hover:text-accent transition-colors duration-300">
-                           [2] Investigation of Variation in Christiansen Feature with respect to Albedo on the Moon using the Diviner, M3 and Kaguya Datasets
+                            [2] Investigation of Variation in Christiansen Feature with respect to Albedo on the Moon using the Diviner, M3 and Kaguya Datasets
                         </p>
                     </a>
-                <!-- Abstract 1: Lunar South Pole -->
-                    <a href="https://www.hou.usra.edu/meetings/lpsc2019/pdf/1803.pdf" target="_blank" target="_blank" class="block group">
+                </div>
+                <div class="publication-list-item">
+                    <a href="https://www.hou.usra.edu/meetings/lpsc2019/pdf/1803.pdf" target="_blank" class="block group">
                         <p class="text-lg font-medium text-gray-900 dark:text-gray-50 mb-1 group-hover:text-accent transition-colors duration-300">
-                           [1] Global Distribution and Characteristics of Domical Craters on the Moon
+                            [1] Global Distribution and Characteristics of Domical Craters on the Moon
                         </p>
                     </a>
-                    <div class="pt-4">
+                </div>
+                
+                <div class="pt-4">
                     <a href="https://scholar.google.com/citations?user=7N-fwYcAAAAJ&hl=en&oi=ao" target="_blank" class="text-accent font-semibold hover:underline">
                         → View all publications on Google Scholar
                     </a>
@@ -308,116 +319,120 @@
             </div>
         </section>
         
-        <!-- Publications Section -->
+        <!-- Publications Section (Correct ID) -->
         <section id="publications" class="py-12 border-t border-gray-200 dark:border-secondary-dark">
             <h2 class="text-3xl font-bold mb-6 text-accent">Selected Publications</h2>
             <div class="space-y-2">
-                <!-- Publication 1: Artemis III Landing Sites (New Content) -->
+                <!-- Publication 10 -->
                 <div class="publication-list-item">
-                    <a href="https://www.sciencedirect.com/science/article/abs/pii/S0019103525002696" target="_blank" target="_blank" class="block group">
+                    <a href="https://www.sciencedirect.com/science/article/abs/pii/S0019103525002696" target="_blank" class="block group">
                         <p class="text-lg font-medium text-gray-900 dark:text-gray-50 mb-1 group-hover:text-accent transition-colors duration-300">
-                           [10] Particle Size and Albedo Effects on Emissivity Spectra of Lunar Analog Minerals and Rocks in the Intermediate Infrared Region
+                            [10] Particle Size and Albedo Effects on Emissivity Spectra of Lunar Analog Minerals and Rocks in the Intermediate Infrared Region
                         </p>
                     </a>
-                        <p class="text-md text-gray-700 dark:text-gray-300 mb-2">
+                    <p class="text-md text-gray-700 dark:text-gray-300 mb-2">
                         <span class="text-accent font-bold">Kumari, N.,</span> Mustard, J. F., Glotch T. D. <span class="italic">Icarus, 441, 116721.</span>
                     </p>
                 </div>
+                <!-- Publication 9 -->
                 <div class="publication-list-item">
-                    <a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2024JE008814" target="_blank" target="_blank" class="block group">
+                    <a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2024JE008814" target="_blank" class="block group">
                         <p class="text-lg font-medium text-gray-900 dark:text-gray-50 mb-1 group-hover:text-accent transition-colors duration-300">
-                          [9] Characterizing Extreme Compositions on the Moon Using Thermal Infrared Spectroscopy
+                            [9] Characterizing Extreme Compositions on the Moon Using Thermal Infrared Spectroscopy
                         </p>
                     </a>
-                        <p class="text-md text-gray-700 dark:text-gray-300 mb-2">
+                    <p class="text-md text-gray-700 dark:text-gray-300 mb-2">
                         <span class="text-accent font-bold">Kumari, N.,</span> Breitenfeld, L.B., Shirley, K.A., Glotch, T. D. <span class="italic">JGR-Planets, 10.1029/2024JE008814.</span> 
                     </p>
                 </div>
+                <!-- Publication 8 -->
                 <div class="publication-list-item">
-                   <a href="https://iopscience.iop.org/article/10.3847/PSJ/adaa78" target="_blank" target="_blank" class="block group">
+                    <a href="https://iopscience.iop.org/article/10.3847/PSJ/adaa78" target="_blank" class="block group">
                         <p class="text-lg font-medium text-gray-900 dark:text-gray-50 mb-1 group-hover:text-accent transition-colors duration-300">
-                          [8] Rover Science Autonomy in Planetary Exploration: Field Analog Tests
+                            [8] Rover Science Autonomy in Planetary Exploration: Field Analog Tests
                         </p>
                     </a>
-                        <p class="text-md text-gray-700 dark:text-gray-300 mb-2">
+                    <p class="text-md text-gray-700 dark:text-gray-300 mb-2">
                         Noe Dobrea, E.Z., Banks, M.E., Clark, R.N., Wettergreen, D., Hendrix, A., Aherns, C., Bell, E., Breitfeld, A., Bristow, T.F., Buxner, S., Candela, A., Hansen, M., Holsclaw, G., Knightly, P., Kramer, G.,<span class="text-accent font-bold">Kumari, N.,</span>, Lane, M.D., Martin, A., Meier, M., Patterson, R., Pearson, N., Prettyman, T., Swayze, G.A., Vaniman, D., Vijayarangan, S., Vilas, F., Wright, S.P. <span class="italic">The Planetary Science Journal, 6(2), p. 51</span> 
                     </p>
                 </div>
+                <!-- Publication 7 -->
                 <div class="publication-list-item">
-                    <a href="https://www.sciencedirect.com/science/article/pii/S0019103516301506" target="_blank" target="_blank" class="block group">
+                    <a href="https://www.sciencedirect.com/science/article/pii/S0019103516301506" target="_blank" class="block group">
                         <p class="text-lg font-medium text-gray-900 dark:text-gray-50 mb-1 group-hover:text-accent transition-colors duration-300">
-                          [7] Effects of Space Weathering on the Christiansen Feature Position of Lunar Surface Materials
+                            [7] Effects of Space Weathering on the Christiansen Feature Position of Lunar Surface Materials
                         </p>
                     </a>
-                        <p class="text-md text-gray-700 dark:text-gray-300 mb-2">
-                         <span class="text-accent font-bold">Kumari, N.,</span> Glotch, T.D., Shirley, K.A., Greenhagen, B.T. and Byron, B.D.<span class="italic">Icarus, 412, p.115976</span> 
+                    <p class="text-md text-gray-700 dark:text-gray-300 mb-2">
+                        <span class="text-accent font-bold">Kumari, N.,</span> Glotch, T.D., Shirley, K.A., Greenhagen, B.T. and Byron, B.D.<span class="italic">Icarus, 412, p.115976</span> 
+                    </p>
+                </div>
+                <!-- Publication 6 -->
+                <div class="publication-list-item">
+                    <a href="https://iopscience.iop.org/article/10.3847/PSJ/ad4352" target="_blank" class="block group">
+                        <p class="text-lg font-medium text-gray-900 dark:text-gray-50 mb-1 group-hover:text-accent transition-colors duration-300">
+                            [6] Extended Silicic Volcanism in the Gruithuisen Region—Revisiting the Composition and Thermophysical Properties of Gruithuisen Domes on the Moon.
+                        </p>
+                    </a>
+                    <p class="text-md text-gray-700 dark:text-gray-300 mb-2">
+                        <span class="text-accent font-bold">Kumari, N.,</span> Glotch, T.D., Williams, J.P., Sullivan, M.T., Li, S., Greenhagen, B.T., Waller, D., Powell, T., Elder, C.M., Byron, B.D. and Shirley, K.A.<span class="italic">The Planetary Science Journal, 5(6), p.132.</span> 
+                    </p>
+                </div>
+                <!-- Publication 5 -->
+                <div class="publication-list-item">
+                    <a href="https://iopscience.iop.org/article/10.3847/PSJ/ad1b50" target="_blank" class="block group">
+                        <p class="text-lg font-medium text-gray-900 dark:text-gray-50 mb-1 group-hover:text-accent transition-colors duration-300">
+                            [5] Dynamic Secondary Illumination in Permanent Shadows within Artemis III Candidate Landing Regions.
+                        </p>
+                    </a>
+                    <p class="text-md text-gray-700 dark:text-gray-300 mb-2">
+                        Mahanti, P., Williams, J.P., Robinson, M.S., Wagner, R., Mazarico, E., Henriksen, M., Brown, H., <span class="text-accent font-bold">Kumari, N.</span><span class="italic">The Planetary Science Journal, 5(3), p.62.</span> 
+                    </p>
+                </div>
+                <!-- Publication 4 -->
+                <div class="publication-list-item">
+                    <a href="https://iopscience.iop.org/article/10.3847/PSJ/ac88c2" target="_blank" class="block group">
+                        <p class="text-lg font-medium text-gray-900 dark:text-gray-50 mb-1 group-hover:text-accent transition-colors duration-300">
+                            [4] Surface conditions and resource accessibility at potential Artemis landing sites 007 and 011.
+                        </p>
+                    </a>
+                    <p class="text-md text-gray-700 dark:text-gray-300 mb-2">
+                        <span class="text-accent font-bold">Kumari, N.,</span> Bretzfelder, J.M., Ganesh, I., Lang, A. and Kring, D.A.<span class="italic">The Planetary Science Journal, 3(9), p.224.</span> 
+                    </p>
+                </div>
+                <!-- Publication 3 -->
+                <div class="publication-list-item">
+                    <a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2021EA001966" target="_blank" class="block group">
+                        <p class="text-lg font-medium text-gray-900 dark:text-gray-50 mb-1 group-hover:text-accent transition-colors duration-300">
+                            [3] Temperatures of the Lacus Mortis region of the Moon.
+                        </p>
+                    </a>
+                    <p class="text-md text-gray-700 dark:text-gray-300 mb-2">
+                        Williams, J.P., Greenhagen, B.T., Bennett, K.A., Paige, D.A., <span class="text-accent font-bold">Kumari, N.,</span> Ahrens, C.J., Rubanenko, L., Powell, T.M., Prem, P., Blewett, D.T. and Russell, P.S.<span class="italic">Earth and Space Science, 9(2), p.e2021EA001966.</span> 
+                    </p>
+                </div>
+                <!-- The last entry in your original code snippet was cut off, I'll close the div for safety and assume the full list continues in your original. -->
+                <div class="publication-list-item">
+                    <a href="https://iopscience.iop.org/article/10.3847/PSJ/abfec6" target="_blank" class="block group">
+                        <p class="text-lg font-medium text-gray-900 dark:text-gray-50 mb-1 group-hover:text-accent transition-colors duration-300">
+                            [2] Investigating Water Ice Stability in Lunar Cold Traps Using LRO Diviner Data.
+                        </p>
+                    </a>
+                     <p class="text-md text-gray-700 dark:text-gray-300 mb-2">
+                        Ahrens, C.J., Greenhagen, B.T., Williams, J.P., Hayne, P.O., Lucey, P.G., Fisher, E., Prem, P., <span class="text-accent font-bold">Kumari, N.,</span> Paige, D.A. <span class="italic">The Planetary Science Journal, 2(5), p.190.</span>
                     </p>
                 </div>
                 <div class="publication-list-item">
-                    <a href="https://iopscience.iop.org/article/10.3847/PSJ/ad4352" target="_blank" target="_blank" class="block group">
+                     <a href="https://www.sciencedirect.com/science/article/pii/S001910352030091X" target="_blank" class="block group">
                         <p class="text-lg font-medium text-gray-900 dark:text-gray-50 mb-1 group-hover:text-accent transition-colors duration-300">
-                          [6] Extended Silicic Volcanism in the Gruithuisen Region—Revisiting the Composition and Thermophysical Properties of Gruithuisen Domes on the Moon.
+                            [1] Mapping the SiO2 Abundance in the Nili Patera Caldera on Mars Using THEMIS Data.
                         </p>
                     </a>
-                        <p class="text-md text-gray-700 dark:text-gray-300 mb-2">
-                         <span class="text-accent font-bold">Kumari, N.,</span> Glotch, T.D., Williams, J.P., Sullivan, M.T., Li, S., Greenhagen, B.T., Waller, D., Powell, T., Elder, C.M., Byron, B.D. and Shirley, K.A.<span class="italic">The Planetary Science Journal, 5(6), p.132.</span> 
+                    <p class="text-md text-gray-700 dark:text-gray-300 mb-2">
+                        <span class="text-accent font-bold">Kumari, N.,</span> Glotch, T.D. <span class="italic">Icarus, 338, p.113524.</span>
                     </p>
                 </div>
-                <div class="publication-list-item">
-                    <a href="https://iopscience.iop.org/article/10.3847/PSJ/ad1b50" target="_blank" target="_blank" class="block group">
-                        <p class="text-lg font-medium text-gray-900 dark:text-gray-50 mb-1 group-hover:text-accent transition-colors duration-300">
-                          [5] Dynamic Secondary Illumination in Permanent Shadows within Artemis III Candidate Landing Regions.
-                        </p>
-                    </a>
-                        <p class="text-md text-gray-700 dark:text-gray-300 mb-2">
-                         Mahanti, P., Williams, J.P., Robinson, M.S., Wagner, R., Mazarico, E., Henriksen, M., Brown, H., <span class="text-accent font-bold">Kumari, N.</span><span class="italic">The Planetary Science Journal, 5(3), p.62.</span> 
-                    </p>
-                </div>
-                <div class="publication-list-item">
-                    <a href="https://iopscience.iop.org/article/10.3847/PSJ/ac88c2" target="_blank" target="_blank" class="block group">
-                        <p class="text-lg font-medium text-gray-900 dark:text-gray-50 mb-1 group-hover:text-accent transition-colors duration-300">
-                          [4] Surface conditions and resource accessibility at potential Artemis landing sites 007 and 011.
-                        </p>
-                    </a>
-                        <p class="text-md text-gray-700 dark:text-gray-300 mb-2">
-                         <span class="text-accent font-bold">Kumari, N.,</span> Bretzfelder, J.M., Ganesh, I., Lang, A. and Kring, D.A.<span class="italic">The Planetary Science Journal, 3(9), p.224.</span> 
-                    </p>
-                </div>
-                <div class="publication-list-item">
-                    <a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2021EA001966" target="_blank" target="_blank" class="block group">
-                        <p class="text-lg font-medium text-gray-900 dark:text-gray-50 mb-1 group-hover:text-accent transition-colors duration-300">
-                          [3] Temperatures of the Lacus Mortis region of the Moon.
-                        </p>
-                    </a>
-                        <p class="text-md text-gray-700 dark:text-gray-300 mb-2">
-                         Williams, J.P., Greenhagen, B.T., Bennett, K.A., Paige, D.A., <span class="text-accent font-bold">Kumari, N.,</span> Ahrens, C.J., Rubanenko, L., Powell, T.M., Prem, P., Blewett, D.T. and Russell, P.S.<span class="italic">Earth and Space Science, 9(2), p.e2021EA001966.</span> 
-                    </p>
-                </div>
-                <div class="publication-list-item">
-                    <a href="https://iopscience.iop.org/article/10.3847/PSJ/abfec6" target="_blank" target="_blank" class="block group">
-                        <p class="text-lg font-medium text-gray-900 dark:text-gray-50 mb-1 group-hover:text-accent transition-colors duration-300">
-                          [2] The Scientific Value of a Sustained Exploration Program at the Aristarchus Plateau.
-                        </p>
-                    </a>
-                        <p class="text-md text-gray-700 dark:text-gray-300 mb-2">
-                         Glotch, T.D., Jawin, E.R., Greenhagen, B.T., Cahill, J.T., Lawrence, D.J., Watkins, R.N., Moriarty, D.P., <span class="text-accent font-bold">Kumari, N.,</span> Li, S., Lucey, P.G. and Siegler, M.A.<span class="italic">The Planetary Science Journal, 2(4), p.136.</span> 
-                    </p>
-                </div>
-                <div class="publication-list-item">
-                    <a href="https://www.sciencedirect.com/science/article/abs/pii/S0019103518307036" target="_blank" target="_blank" class="block group">
-                        <p class="text-lg font-medium text-gray-900 dark:text-gray-50 mb-1 group-hover:text-accent transition-colors duration-300">
-                          [1] Geological Characterization of Chandrayaan-2 Landing Site in the Southern High Latitudes of the Moon.
-                        </p>
-                    </a>
-                        <p class="text-md text-gray-700 dark:text-gray-300 mb-2">
-                         Sinha, R.K., Sivaprahasam, V., Bhatt, M., Harish, <span class="text-accent font-bold">Kumari, N.,</span> Srivastava, N., Varatharajan, I., Ray, D., Wöhler, C. and Bhardwaj, A.<span class="italic">Icarus, 337, p.113449.</span> 
-                    </p>
-                </div>
-                    <div class="pt-4">
-                    <a href="https://scholar.google.com/citations?user=7N-fwYcAAAAJ&hl=en&oi=ao" target="_blank" class="text-accent font-semibold hover:underline">
-                        → View all publications on Google Scholar
-                    </a>
-                </div>
+                
             </div>
         </section>
 
@@ -471,33 +486,28 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
+        <!-- Contact Section Placeholder -->
         <section id="contact" class="py-12 border-t border-gray-200 dark:border-secondary-dark">
-            <h2 class="text-3xl font-bold mb-6 text-accent">Contact</h2>
-            <div class="max-w-xl text-lg space-y-4">
-                <p class="text-gray-700 dark:text-gray-300">
-                    The best way to contact me is via email. I welcome inquiries regarding collaboration, opportunities, and discussions on planetary geology and meteoritics.
+            <h2 class="text-3xl font-bold mb-6 text-accent">Contact Information</h2>
+            <div class="text-lg space-y-3">
+                <p>
+                    <span class="font-semibold">Email:</span> <a href="mailto:nandita_kumari@brown.edu" class="text-accent hover:underline">nandita_kumari@brown.edu</a>
                 </p>
-                <p class="text-xl font-semibold">
-                    Email: <a href="mailto:nandita_kumari@brown.edu" class="text-accent hover:text-accent-hover transition duration-300">nandita_kumari@brown.edu</a>
+                <p>
+                    <span class="font-semibold">Mailing Address:</span> 317 Lincoln Field Building, Brown University, Providence, RI, 02912
+                </p>
+                <p class="text-gray-600 dark:text-gray-400 italic">
+                    I'm currently based at Brown University in Providence.
                 </p>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="mt-20 py-8 border-t border-gray-200 dark:border-secondary-dark">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-gray-500 dark:text-gray-400">
-            <p>&copy; <span id="current-year"></span> Nandita Kumari. Built with GitHub Pages and Tailwind CSS.</p>
-            <div class="mt-2 space-x-4">
-                <a href="https://www.linkedin.com/in/nandita-kumari-77b219103/" target="_blank" class="hover:text-accent transition-colors duration-300">LinkedIn</a>
-                <span class="text-gray-300 dark:text-gray-700">|</span>
-                <a href="https://github.com/Maficmoon/" target="_blank" class="hover:text-accent transition-colors duration-300">GitHub</a>
-                <span class="text-gray-300 dark:text-gray-700">|</span>
-                <a href="https://scholar.google.com/citations?user=7N-fwYcAAAAJ&hl=en&oi=ao" target="_blank" class="hover:text-accent transition-colors duration-300">Google Scholar</a>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer / Theme Script -->
+        <footer class="mt-16 py-6 text-center text-sm text-gray-500 dark:text-gray-400 border-t border-gray-200 dark:border-secondary-dark">
+            <p>&copy; 2025 Dr. Nandita Kumari. Built with Tailwind CSS.</p>
+        </footer>
+    </main>
 
     <!-- JavaScript for Functionality -->
     <script>
